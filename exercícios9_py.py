@@ -69,9 +69,12 @@ def div (Divisão):
     print('Você escolheu divisão, legal!')
     valores5 = int(input('Digite um valor para sua divisão : '))
     valores6 = int(input('Digite outro valor para sua divisão : '))
-    resultado3 = valores5 / valores6
-
-    print('O resultado de {} / {} é igual a = {}'.format(valores5,valores6,resultado3))
+    
+    if valores6 == 0:
+      print('A divisão por "0" é impossível.')
+    else:
+      resultado3 = valores5 / valores6 
+      print('O resultado de {} / {} é igual a = {}'.format(valores5,valores6,resultado3))
 
 def mult (Multiplicação):
     print('Você escolheu multiplicação, legal!')
